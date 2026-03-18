@@ -32,6 +32,11 @@ Application Windows legere pour declencher une alerte discrete depuis la barre d
 
 Le lien Teams n'est pas saisi par l'utilisateur final. Il doit etre fourni par l'administration dans un fichier ini separe:
 
+<img width="170" height="335" alt="image" src="https://github.com/user-attachments/assets/025eefad-7662-40cf-904b-3a45c65ab035" />
+<img width="897" height="719" alt="image" src="https://github.com/user-attachments/assets/124ae07b-bdd1-4fb8-bbf3-a8629ba1dc2a" />
+<img width="885" height="477" alt="image" src="https://github.com/user-attachments/assets/986a1843-c104-4cd8-a11f-3eca5b4d431a" />
+<img width="885" height="336" alt="image" src="https://github.com/user-attachments/assets/433d5bd1-217f-4918-ad07-6de59807f54e" />
+
 L'application lit ce lien en priorite dans `%ProgramData%\AlerteSalaries\AlerteSalaries.Admin.ini`.
 
 Exemple:
