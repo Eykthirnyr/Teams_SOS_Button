@@ -30,7 +30,7 @@ Application Windows legere pour declencher une alerte discrete depuis la barre d
 
 ## Configuration admin Teams
 
-Le lien Teams n'est pas saisi par l'utilisateur final. Il doit etre fourni par l'administration dans un fichier ini separe:
+Le lien Teams "Webhook Link" n'est pas saisi par l'utilisateur final. Il doit etre fourni par l'administration dans un fichier ini separe :
 
 <img width="170" height="335" alt="image" src="https://github.com/user-attachments/assets/025eefad-7662-40cf-904b-3a45c65ab035" />
 <img width="897" height="719" alt="image" src="https://github.com/user-attachments/assets/124ae07b-bdd1-4fb8-bbf3-a8629ba1dc2a" />
