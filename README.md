@@ -196,15 +196,6 @@ Ce fichier epingle le raccourci commun du menu Demarrer:
 - Packaging MSI: WiX
 - Deploiement silencieux alternatif: `.cmd` + `wscript.exe`
 
-### Fichiers principaux
-
-- `src\AlerteSalaries.cs`
-- `Build-AlerteSalaries.ps1`
-- `Build-Msi.ps1`
-- `wix\Product.wxs`
-- `deploy\Deploy-AlerteSalaries-Silent.cmd`
-- `deploy\TaskbarLayoutModification.xml`
-
 ### Comportement technique
 
 - Mutex local pour bloquer les doubles clics pendant l'alerte
