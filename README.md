@@ -1,4 +1,4 @@
-# Alerte Salaries
+# Alerte Salariés
 
 Application Windows legere pour declencher une alerte discrete depuis la barre des taches, notifier Teams via webhook admin, puis enregistrer le micro local pendant 15 minutes.
 
@@ -9,6 +9,9 @@ Application Windows legere pour declencher une alerte discrete depuis la barre d
 - L'application enregistre le micro local pendant 15 minutes.
 - Le fichier audio est depose sur le Bureau du poste.
 - Un second clic pendant l'enregistrement est ignore.
+
+<img width="816" height="638" alt="image" src="https://github.com/user-attachments/assets/52d52725-cc3a-40ce-a374-67470dee1b56" />
+
 
 ## Fonctionnement utilisateur
 
