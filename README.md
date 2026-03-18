@@ -12,6 +12,8 @@ Application Windows legere pour declencher une alerte discrete depuis la barre d
 
 <img width="816" height="638" alt="image" src="https://github.com/user-attachments/assets/52d52725-cc3a-40ce-a374-67470dee1b56" />
 
+<img width="674" height="516" alt="image" src="https://github.com/user-attachments/assets/ec5316d8-13d0-40a9-b1cc-6174218b25f1" />
+
 
 ## Fonctionnement utilisateur
 
