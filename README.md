@@ -50,41 +50,23 @@ WebhookUrl=https://votre-url-workflow-ou-power-automate
    - `Alerte Salaries`
 8. Epingler le raccourci `Alerte Salaries` dans la barre des taches, ou appliquer `deploy\TaskbarLayoutModification.xml` via GPO/Intune.
 
-## Fichiers a utiliser
-
-### Scripts de build
-
-- `C:\Users\c.ghanem\OneDrive - PBSCO\Documents\Playground\Build-AlerteSalaries.ps1`
-- `C:\Users\c.ghanem\OneDrive - PBSCO\Documents\Playground\Build-Msi.ps1`
-
-### Livrable principal pour deploiement
-
-- `C:\Users\c.ghanem\OneDrive - PBSCO\Documents\Playground\build\msi\AlerteSalaries.msi`
-
-### Fichiers utiles de reference
-
-- `C:\Users\c.ghanem\OneDrive - PBSCO\Documents\Playground\build\publish\AlerteSalaries.exe`
-- `C:\Users\c.ghanem\OneDrive - PBSCO\Documents\Playground\deploy\AlerteSalaries.Admin.ini`
-- `C:\Users\c.ghanem\OneDrive - PBSCO\Documents\Playground\deploy\TaskbarLayoutModification.xml`
-- `C:\Users\c.ghanem\OneDrive - PBSCO\Documents\Playground\deploy\Deploy-AlerteSalaries-Silent.cmd`
-
 ## Commandes de build
 
 ### Recompiler l'application
 
 ```powershell
-powershell.exe -ExecutionPolicy Bypass -File "C:\Users\c.ghanem\OneDrive - PBSCO\Documents\Playground\Build-AlerteSalaries.ps1"
+powershell.exe -ExecutionPolicy Bypass -File Build-AlerteSalaries.ps1
 ```
 
 ### Regenerer le MSI
 
 ```powershell
-powershell.exe -ExecutionPolicy Bypass -File "C:\Users\c.ghanem\OneDrive - PBSCO\Documents\Playground\Build-Msi.ps1"
+powershell.exe -ExecutionPolicy Bypass -File Build-Msi.ps1
 ```
 
 ## Deploiement silencieux
 
-Le chemin recommande est maintenant sans PowerShell:
+Le chemin recommande  sans PowerShell:
 
 - utilisez `Deploy-AlerteSalaries-Silent.cmd`
 
@@ -112,7 +94,7 @@ Le MSI supporte des proprietes publiques pour le deploiement silencieux.
 ### Exemple d'installation MSI manuelle
 
 ```powershell
-msiexec /i "C:\Users\c.ghanem\OneDrive - PBSCO\Documents\Playground\build\msi\AlerteSalaries.msi" TEAMSWEBHOOKURL="https://votre-url" INSTALLDESKTOPSHORTCUT=1 /qn /norestart
+msiexec /i AlerteSalaries.msi TEAMSWEBHOOKURL="https://votre-url" INSTALLDESKTOPSHORTCUT=1 /qn /norestart
 ```
 
 ### Exemple GPO
@@ -128,7 +110,7 @@ msiexec /i "\\serveur\share\AlerteSalaries.msi" TEAMSWEBHOOKURL="https://votre-u
 Commande a lancer depuis PowerShell:
 
 ```powershell
-msiexec /i "C:\Users\c.ghanem\OneDrive - PBSCO\Documents\Playground\build\msi\AlerteSalaries.msi" TEAMSWEBHOOKURL="https://default622d8b6d5b2a454bab25ca0e776c62.63.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/3d7426aa7dcc4791a16c67fde34647c9/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=G-U_a1cVNOGO_uJqoIwqbccvPg7UibDclx_PPv8Ltqw" INSTALLDESKTOPSHORTCUT=1 /qn /norestart /L*V "$env:TEMP\AlerteSalaries-MSI.log"
+msiexec /i AlerteSalaries.msi TEAMSWEBHOOKURL="[webhookurl](https://votre-url)" INSTALLDESKTOPSHORTCUT=1 /qn /norestart /L*V "$env:TEMP\AlerteSalaries-MSI.log"
 ```
 
 Note:
