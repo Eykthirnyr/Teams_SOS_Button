@@ -25,9 +25,7 @@ Application Windows legere pour declencher une alerte discrete depuis la barre d
 
 ## Configuration admin Teams
 
-Le lien Teams n'est plus saisi par l'utilisateur final. Il doit etre fourni par l'administration dans un fichier ini separe:
-
-- `WebhookUrl=https://...`
+Le lien Teams n'est pas saisi par l'utilisateur final. Il doit etre fourni par l'administration dans un fichier ini separe:
 
 L'application lit ce lien en priorite dans `%ProgramData%\AlerteSalaries\AlerteSalaries.Admin.ini`.
 
