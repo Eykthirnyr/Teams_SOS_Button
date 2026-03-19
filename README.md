@@ -72,24 +72,6 @@ powershell.exe -ExecutionPolicy Bypass -File Build-AlerteSalaries.ps1
 powershell.exe -ExecutionPolicy Bypass -File Build-Msi.ps1
 ```
 
-## Deploiement silencieux
-
-Le chemin recommande  sans PowerShell:
-
-- utilisez `Deploy-AlerteSalaries-Silent.cmd`
-
-Ce script batch natif Windows:
-
-- copie l'application dans `%ProgramFiles%\AlerteSalaries`
-- copie le fichier admin ini dans `%ProgramData%\AlerteSalaries`
-- cree les raccourcis communs via `wscript.exe`
-
-Le script PowerShell de deploiement reste disponible seulement en secours.
-
-## MSI et parametres de deploiement
-
-Le MSI supporte des proprietes publiques pour le deploiement silencieux.
-
 ### Parametres MSI disponibles
 
 - `TEAMSWEBHOOKURL`
